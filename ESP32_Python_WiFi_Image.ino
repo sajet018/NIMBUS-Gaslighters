@@ -135,7 +135,7 @@ void setup() {
   server.begin();
   Serial.println("Server on port 80.");
 
-  if(psramFound()) {
+  if (psramFound()) {
     Serial.println("PSRAM found.");
   }
   else {
