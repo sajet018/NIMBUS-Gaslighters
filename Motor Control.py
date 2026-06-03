@@ -30,8 +30,8 @@ def send_motor_command():
 
     try:
         motor_session.get(
-            f"{MOTORS_URL}? m1 = {left} & m2 = {right} & m3 = {vertical}",
-            timeout = (1, 2)
+            f"{MOTORS_URL}?m1={left}&m2={right}&m3={vertical}",
+            timeout=(1, 2)
         )
     except Exception as e:
         print("Motor error: ", e)
