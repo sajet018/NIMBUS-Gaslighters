@@ -1,7 +1,6 @@
 import requests
 
 ESP_IP = "10.49.144.120"
-SNAPSHOT_URL = f"http://{ESP_IP}/snapshot"
 MOTORS_URL = f"http://{ESP_IP}/motors"
 
 motor_session = requests.Session()
